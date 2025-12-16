@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ui.MainviewController">
+
+    <top>
+        <ToolBar>
+            <Button text="Neues Konto" onAction="#onNewAccount"/>
+            <Button text="hello world"/>
+        </ToolBar>
+    </top>
+
+    <center>
+        <ListView fx:id="lvAccounts"/>
+    </center>
+
+</BorderPane>

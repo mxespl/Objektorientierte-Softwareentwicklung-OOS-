@@ -1,0 +1,32 @@
+[
+  {
+    "CLASSNAME": "Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.0,
+      "outgoingInterest": 0.0,
+      "date": "1",
+      "amount": 1.0,
+      "description": "1"
+    }
+  },
+  {
+    "CLASSNAME": "OutgoingTransfer",
+    "INSTANCE": {
+      "sender": "bob",
+      "recipient": "john",
+      "date": "1",
+      "amount": 1.0,
+      "description": "a"
+    }
+  },
+  {
+    "CLASSNAME": "Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.0,
+      "outgoingInterest": 0.0,
+      "date": "01.10.10",
+      "amount": 100.0,
+      "description": "a"
+    }
+  }
+]

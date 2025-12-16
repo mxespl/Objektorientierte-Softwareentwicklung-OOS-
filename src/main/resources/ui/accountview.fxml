@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ui.AccountviewController">
+
+    <top>
+        <VBox spacing="8" style="-fx-padding: 10;">
+            <HBox spacing="10">
+                <Button text="Back" onAction="#onBack"/>
+                <Label text="Account:"/>
+                <Label fx:id="lblAccountName" style="-fx-font-weight: bold;"/>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <Label text="Balance:"/>
+                <Label fx:id="lblBalance" style="-fx-font-weight: bold;"/>
+            </HBox>
+
+            <!-- BARIS BARU: tombol sort + filter + neue transaktion -->
+            <HBox spacing="8">
+                <Button text="Sort ↑" onAction="#onSortAsc"/>
+                <Button text="Sort ↓" onAction="#onSortDesc"/>
+                <Button text="+ only" onAction="#onOnlyPositive"/>
+                <Button text="- only" onAction="#onOnlyNegative"/>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <Button text="Neue Transaktion" onAction="#onNewTransaction"/>
+            </HBox>
+        </VBox>
+    </top>
+
+
+    <center>
+        <ListView fx:id="lvTransactions"/>
+    </center>
+
+</BorderPane>
